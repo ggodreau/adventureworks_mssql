@@ -16,16 +16,14 @@ Note that this is the non-DW version of the database (it comes in two forms, dim
 - Load the file onto the database server (in this tutorial's case, the EC2 instance)
 - Open SQL Server Management Studio
 - Right click on the 'Databases' folder and click on 'Restore Database'
-- Select 'Device' for source and use the ellipsis to browse to the .bak file 
-<img src="https://raw.githubusercontent.com/ggodreau/adventureworks_mssql/assets/install0.png" width="650">
+- Select 'Device' for source and use the ellipsis to browse to the .bak file <img src="https://raw.githubusercontent.com/ggodreau/adventureworks_mssql/master/assets/install0.png" width="650">
 - Ensure the database name in the restore plan is 'AdventureWorks2014' and does not conflict with any other databases on the server
 - Click OK
-- Verify the restore looks as follows:
-<img src="https://raw.githubusercontent.com/ggodreau/adventureworks_mssql/assets/install1.png" width="650">
+- Verify the restore looks as follows <img src="https://raw.githubusercontent.com/ggodreau/adventureworks_mssql/master/assets/install1.png" width="650">
 
 ## Query Testing
 
-To ensure the data was loaded correctly, perform a PK checksum on the Product table as below:
+To ensure the data was loaded correctly, run the following query (PK checksum) on the Product table:
 
 ```sql
 USE AdventureWorks2014
