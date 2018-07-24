@@ -36,3 +36,17 @@ Expected result:
 ```
 339212
 ```
+
+And run the following query as a checksum for the total number of tables loaded into the database:
+
+```sql
+USE AdventureWorks2014
+GO
+SELECT COUNT(*)
+FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'
+```
+
+Expected result:
+```
+71
+```
