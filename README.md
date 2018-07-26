@@ -13,7 +13,7 @@ Note that this is the non-DW version of the database (it comes in two forms, dim
 - If you are using AWS, spool up an appropriately sized EC2 instance of ami-9a5562e5, [Microsoft Windows Server 2016 with SQL Server 2016 Web](https://aws.amazon.com/marketplace/pp/B01M6ZOVHK?qid=1532469349148&sr=0-2&ref_=srh_res_product_title). t2.Medium (2vCPU, 4GB RAM, 50GB HDD) was used for testing and should be appropriate for moderately sized classes (20 students or so).
 - Create a keypair (.pem), decrypt the Administrator password using the connect button of the AWS EC2 console.
 - Using RDP, connect to your instance using [these steps](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html?icmpid=docs_ec2_console).
-- Load the file onto the database server (in this tutorial's case, the EC2 instance)
+- Load the Adventureworks2014.bak file onto the database server (in this tutorial's case, the EC2 instance)
 - Open SQL Server Management Studio
 - Right click on the 'Databases' folder and click on 'Restore Database'
 - Select 'Device' for source and use the ellipsis to browse to the .bak file <img src="https://raw.githubusercontent.com/ggodreau/adventureworks_mssql/master/assets/install0.png" width="650">
